@@ -16,15 +16,17 @@ const TodoForm: React.FC<Props> = ({ onAddTodo }) => {
   };
 
   return (
-    <form className="todo-form" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="เพิ่มรายการ"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <button type="submit">เพิ่ม</button>
-    </form>
+    <div>
+      <form className="todo-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="เพิ่มรายการ"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <button type="submit">เพิ่ม</button>
+      </form>
+    </div>
   );
 };
 
