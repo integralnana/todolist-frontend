@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/todos';
+const API_URL = 'https://todolist-api-vetu.onrender.com';
 
 export const getTodos = async () => await axios.get(API_URL);
 export const addTodo = async (title: string) => await axios.post(API_URL, { title });
